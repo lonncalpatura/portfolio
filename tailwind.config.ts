@@ -7,11 +7,15 @@ export default {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    colors: {
+      "background": "#000319",
+      "primary": "#253485",
+    },
     extend: {
-      colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
-      },
+      textColor: {
+        "primary": "#ffffff",
+        "secondary": "#b1b6ce",
+      }
     },
   },
   plugins: [],
