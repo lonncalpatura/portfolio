@@ -5,7 +5,9 @@ const Hero = () => {
     <>
       <h6 className="font-medium">Hi, my name is</h6>
       <h2>Lonn Calpatura</h2>
-      <p className="pt-4 text-secondary">An aspiring frontend website developer, with experience in AV, and interest in IT.</p>
+      <p className="mt-4 mb-8 text-secondary">An aspiring frontend website developer, with experience in AV, and interest in IT.</p>
+      <a href="" className="">View Resume</a>
+
       <ul className="pt-8 flex gap-4">
         <li>LinkedIn</li>
         <li>GitHub</li>

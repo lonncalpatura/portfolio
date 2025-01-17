@@ -14,7 +14,8 @@ export default {
     extend: {
       textColor: {
         "primary": "#ffffff",
-        "secondary": "#b1b6ce",
+        "secondary": "#abb0cc",
+        "tertiary": "#8088ae",
       }
     },
   },
