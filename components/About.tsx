@@ -12,9 +12,6 @@ const About = () => {
           I&apos;m a web developer...
         </p>
         <p>
-          Currently...
-        </p>
-        <p>
           In the past...
         </p>
         <p>

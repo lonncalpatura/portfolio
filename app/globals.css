@@ -38,13 +38,27 @@
   h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
     line-height: 1.25;
+    max-width: 60ch;
   }
+  p {
+    max-width: 60ch;
+  }
+
   .caption {
     font-size: 0.833rem;
   }
-  
+  .button {
+    @apply px-6 py-3 rounded-full border-solid bg-primary;
+  }
   .skill-tag {
-    @apply px-3 py-1 bg-primary rounded-full border-solid font-medium;
+    @apply px-3 py-1 rounded-full border-solid bg-primary font-medium;
+  }
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
   }
 };
 
