@@ -8,22 +8,12 @@ const Education = () => {
       certificate: [
         "Bachelor of Arts in Digital Media (First Class Honours)"
       ],
-      description: (
-        <ul className="pl-5 text-secondary list-disc">
-          <li>
-            Developed a fully responsive website for my final year project using <span className="text-primary">HTML, CSS, & JS</span>.
-          </li>
-          <li>
-            Built a Mobile app using <span className="text-primary">React Native</span>.
-          </li>
-          <li>
-            Produced a short film, editing with the <span className="text-primary">Adobe Suite</span>.
-          </li>
-          <li>
-            Collected and analysed various datasets with <span className="text-primary">Excel</span>. 
-          </li>
-        </ul>
-      ),
+      description: [
+        "Developed a fully responsive website for my final year project using HTML, CSS, & JS",
+        "Built a Mobile app using React Native",
+        "Produced a short film, editing with the Adobe Suite",
+        "Collected and analysed various datasets with Excel",
+      ],
     },
     {
       year: "2017 - 2019",
@@ -32,17 +22,19 @@ const Education = () => {
         "Cambridge Technical: Information Technology (Distinction)",
         "A Level: Art Graphics (A)"
       ],
-      description: "",
+      description: [],
     },
   ];
 
   return (
     <div>
       <h6>EDUCATION</h6>
-      <div className="flex flex-col gap-10 mt-10">
+
+      <div className="flex flex-col gap-16 mt-10">
         {educationData.map((education, index) => (
-          <div key={index}>
-            <p className="mb-2 font-semibold text-tertiary">{education.year}</p>
+          <div key={index} className="">
+            <p className="caption mb-4 font-semibold text-tertiary">{education.year}</p>
+            
             <h6>{education.institution}</h6>
 
             <div className="mt-1 mb-2 text-tertiary">
@@ -53,7 +45,11 @@ const Education = () => {
               </ul>
             </div>
 
-            <>{education.description}</>
+            <ul className="pl-5 text-secondary list-disc">
+              {education.description.map((description, index) => (
+                <li key={index}>{description}</li>
+              ))}
+            </ul>
           </div>
         ))}
       </div>

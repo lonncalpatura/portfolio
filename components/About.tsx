@@ -6,7 +6,7 @@ const About = () => {
       <h6>ABOUT ME</h6>
       <div className="flex flex-col gap-4 mt-10 text-secondary">
         <p>
-          Just to clarify, my full name is <span className="text-primary">Lonn Doneill Calpatura</span>, but I prefer to be called <span className="text-primary">Onyl</span>.
+          My full name is <span className="text-primary">Lonn Doneill Calpatura</span>, but I prefer to be called <span className="text-primary">Onyl</span>.
         </p>
         <p>
           I&apos;m a web developer...
