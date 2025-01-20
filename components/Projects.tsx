@@ -4,13 +4,27 @@ const Projects = () => {
   const portfolioData = [
     {
       title: "FICSDA Website",
-      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus similique, placeat officia quia facere iure accusantium nemo ad necessitatibus sint voluptatum enim assumenda quae eveniet repellendus vero, neque consectetur quis.",
+      description: "Freelance job.",
       image:"",
+      skills: [
+        "",
+      ]
     },
     {
-      title: "Project 2",
-      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, explicabo maiores corrupti pariatur culpa molestias recusandae quibusdam, debitis repellat perspiciatis aspernatur assumenda magnam totam eaque! Doloremque explicabo atque tempora porro.",
+      title: "FICSDA App",
+      description: "A university project.",
       image: "",
+      skills: [
+        "",
+      ]
+    },
+    {
+      title: "Digital Agency Website",
+      description: "Another university project.",
+      image: "",
+      skills: [
+        "",
+      ]
     },
   ]
 
