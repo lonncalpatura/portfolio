@@ -1,20 +1,74 @@
 @tailwind base;
 
 @layer base {
+  :root {
+    --text: hsl(220, 45%, 95%);
+    --text-2: hsl(222, 35%, 80%);
+    --text-3: hsl(222, 30%, 70%);
+    --text-4: hsl(222, 25%, 60%);
+    --text-5: hsl(222, 20%, 50%);
+    --text-6: hsl(222, 15%, 40%);
+    --text-7: hsl(222, 10%, 30%);
+    --text-8: hsl(222, 5%, 20%);
+
+    --background-50: #ecf0f8;
+    --background-100: #dae1f1;
+    --background-200: #b5c3e3;
+    --background-300: #8fa4d6;
+    --background-400: #6a86c8;
+    --background-500: #4568ba;
+    --background-600: #375395;
+    --background-700: #293e70;
+    --background-800: #1c2a4a;
+    --background-900: #0e1525;
+    --background-950: #070a13;
+    
+    --primary: #0f172a;
+    --primary-100: #262c3e;
+    --primary-200: #3e4354;
+    --primary-300: #565b6a;
+    --primary-400: #707481;
+    --primary-500: #8b8e99;
+    
+    --accent: #3ffc8c;
+    --accent-50: #e6fff0;
+    --accent-100: #cdfee1;
+    --accent-200: #9bfdc2;
+    --accent-300: #68fda4;
+    --accent-400: #36fc85;
+    --accent-500: #04fb67;
+    --accent-600: #03c952;
+    --accent-700: #02973e;
+    --accent-800: #026429;
+    --accent-900: #013215;
+    --accent-950: #00190a;
+  }
+
   html {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 400;
     line-height: 1.25;
   }
   @media (min-width: 768px) {
     html {
-      font-size: 18px;
+      font-size: 16px;
     }
   }
   @media (min-width: 1280px) {
     html {
-      font-size: 20px;
+      font-size: 18px;
     }
+    .card {
+      padding: 1rem;
+      border-radius: 0.5rem;
+      border-top: 1px solid transparent;
+      border-bottom: 1px solid transparent;
+    
+      &:hover {
+        border-top-color: white;
+        border-bottom-color: black;
+      }
+    }    
   }
 
   h1 {
@@ -48,10 +102,10 @@
     font-size: 0.833rem;
   }
   .button {
-    @apply px-6 py-3 rounded-full border-solid bg-primary;
+    @apply px-6 py-3 rounded-full border-solid bg-accent-200 font-medium text-primary;
   }
   .skill-tag {
-    @apply px-3 py-1 rounded-full border-solid bg-primary font-medium;
+    @apply px-3 py-1 rounded-full border-solid bg-accent-200 font-medium text-primary;
   }
   .no-scrollbar::-webkit-scrollbar {
     display: none;

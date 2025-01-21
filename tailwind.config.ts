@@ -8,15 +8,43 @@ export default {
   ],
   theme: {
     colors: {
-      "background": "#000319",
-      "primary": "#253485",
+      "primary": {
+        DEFAULT: "var(--primary)",
+        100: "var(--primary-100)",
+        200: "var(--primary-200)",
+        300: "var(--primary-300)",
+        400: "var(--primary-400)",
+        500: "var(--primary-500)",
+      },
+      "accent": {
+        DEFAULT: "var(--accent)",
+        50: "var(--accent-50)",
+        100: "var(--accent-100)",
+        200: "var(--accent-200)",
+        300: "var(--accent-300)",
+        400: "var(--accent-400)",
+        500: "var(--accent-500)",
+        600: "var(--accent-600)",
+        700: "var(--accent-700)",
+        800: "var(--accent-800)",
+        900: "var(--accent-900)",
+        950: "var(--accent-950)",
+      },
     },
+    
     extend: {
       textColor: {
-        "primary": "#ffffff",
-        "secondary": "#abb0cc",
-        "tertiary": "#8088ae",
-      }
+        "color": {
+          DEFAULT: "var(--text)",
+          2: "var(--text-2)",
+          3: "var(--text-3)",
+          4: "var(--text-4)",
+          5: "var(--text-5)",
+          6: "var(--text-6)",
+          7: "var(--text-7)",
+          8: "var(--text-8)",
+        },
+      },
     },
   },
   plugins: [],

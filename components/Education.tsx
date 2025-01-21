@@ -28,24 +28,24 @@ const Education = () => {
 
   return (
     <div>
-      <h6>EDUCATION</h6>
+      <h5>EDUCATION</h5>
 
       <div className="flex flex-col gap-16 mt-10">
         {educationData.map((education, index) => (
           <div key={index} className="">
-            <p className="caption mb-4 font-semibold text-tertiary">{education.year}</p>
+            <p className="caption mb-4 font-semibold text-color-4">{education.year}</p>
             
             <h6>{education.institution}</h6>
 
-            <div className="mt-1 mb-2 text-tertiary">
+            <div className="mt-1 mb-2 text-color-2">
               <ul className="flex flex-col gap-1">
                 {education.certificate.map((certificate, index) => (
-                  <li key={index}>{certificate}</li>
+                  <li key={index}><h6 className="font-normal">{certificate}</h6></li>
                 ))}
               </ul>
             </div>
 
-            <ul className="pl-5 text-secondary list-disc">
+            <ul className="pl-5 text-color-3 list-disc">
               {education.description.map((description, index) => (
                 <li key={index}>{description}</li>
               ))}

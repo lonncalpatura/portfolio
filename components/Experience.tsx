@@ -7,16 +7,11 @@ const Experience = () => {
       job: (
         <>
           Head of Department (volunteer)
-          <span className="font-normal text-tertiary">Associate Head</span>
-          <span className="font-normal text-tertiary">Team Member</span>
+          <span className="font-normal text-color-2">Associate Head</span>
+          <span className="font-normal text-color-2">Team Member</span>
         </>
       ),
-      organisation: (
-        <>
-          FICSDA
-          <span className="font-normal"> - Media and Communications</span>
-        </>
-      ),
+      organisation: "FICSDA - Media and Communications",
       organisastionLink: "https://ficsda.org",
       responsibilities: "Led and managed a team of 4-15 volunteers, overseeing AV production and system renovations (£2000-£5000) while collaborating on media initiatives like livestreaming, photography, and videography. Efficiently addressed technical issues during live events, ensuring smooth operations and high-quality worship experiences.",
       skills: [
@@ -34,7 +29,7 @@ const Experience = () => {
       job: "Website Developer",
       organisation: "Self-employed Freelance",
       organisationLink: "",
-      responsibilities: "Worked with clients to develop their websites, sticking to their requirements, Managed my own time to meet set deadlines",
+      responsibilities: "Worked with clients to develop their websites, sticking to their requirements. Managed my own time to meet set deadlines.",
       skills: [
         "HTML & CSS",
         "JavaScript",
@@ -51,7 +46,7 @@ const Experience = () => {
       job: "Food Courier",
       organisation: "Deliveroo, Uber Eats, Just Eat",
       organisationLink: "",
-      responsibilities: "Delivered food orders promptly with excellent customer service, earning high customer ratings for reliability and quality, Managed multiple orders in a fast-paced environment, optimizing routes to meet delivery deadlines, Maintained food safety and security during transit, adhering to hygiene standards",
+      responsibilities: "Delivered food orders promptly with excellent customer service, earning high customer ratings for reliability and quality. Managed multiple orders in a fast-paced environment, optimizing routes to meet delivery deadlines, Maintained food safety and security during transit, adhering to hygiene standards.",
       skills: [
         "Adaptability",
         "Customer Service",
@@ -65,7 +60,7 @@ const Experience = () => {
       job: "Graphic Designer (work experience)",
       organisation: "Barnet Hospital",
       organisationLink: "",
-      responsibilities: "Designed and printed promotional and informational material advertising the ward and hospital, Managed simultaneous projects, ensuring deadlines and requirements were met",
+      responsibilities: "Designed and printed promotional and informational material advertising the ward and hospital, Managed simultaneous projects, ensuring deadlines and requirements were met.",
       skills: [
         "Adobe CC",
         "Microsoft 365",
@@ -75,18 +70,18 @@ const Experience = () => {
 
   return (
     <div>
-      <h6>EXPERIENCE</h6>
+      <h5>EXPERIENCE</h5>
 
       <div className="flex flex-col gap-16 mt-10">
         {experienceData.map ((experience, index) => (
-          <div key={index}>
-            <p className="caption mb-4 font-semibold text-tertiary">{experience.date}</p>
+          <div key={index} className="card">
+            <p className="caption mb-4 font-semibold text-color-4">{experience.date}</p>
 
-            <a href={experience.organisastionLink} target="_blank" rel="noopener noreferrer" className="block mb-2 font-medium">{experience.organisation}</a>
+            <a href={experience.organisastionLink} target="_blank" rel="noopener noreferrer" className="inline-block mb-2"><h6 className="font-normal text-color">{experience.organisation}</h6></a>
 
             <h6 className="flex flex-col mb-4">{experience.job}</h6>
 
-            <p className="flex flex-col gap-1 list-disc text-secondary">
+            <p className="flex flex-col gap-1 list-disc text-color-3">
               {experience.responsibilities}
             </p>
 

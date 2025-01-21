@@ -2,9 +2,9 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <p className="text-secondary text-center my-16">
-      Developed using HTML, Tailwind CSS, React, Next.js, Node.js and Framer Motion.
-    </p>
+    <div className="my-16 text-center text-color-3">
+      Developed using React, TyprScript, Tailwind CSS, Next.js, Node.js, and Framer Motion.
+    </div>
   )
 }
 
