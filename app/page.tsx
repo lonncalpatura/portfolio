@@ -4,6 +4,7 @@ import Experience from "@/components/Experience";
 import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import Projects from "@/components/Projects";
+import Example from "@/components/Tabs";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
           <Hero />
         </div>
         <div className="flex flex-col gap-20 mt-32 lg:mt-0 max-h-full lg:overflow-y-scroll lg:no-scrollbar lg:pt-20">
+          <Example />
           <About />
           <Projects />
           <Experience />

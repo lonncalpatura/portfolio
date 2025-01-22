@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
-import ficsdaImage from "../images/ficsda.png"
-import lunarImage from "../images/lunar.png";
+import ficsdaImage from "../assets/images/ficsda.png"
+import lunarImage from "../assets/images/lunar.png";
 import { ArrowUpRightIcon } from "@heroicons/react/24/outline";
 
 const Projects = () => {
@@ -56,7 +56,7 @@ const Projects = () => {
           <div key={index} className="card">
             <a href={project.link} target="_blank" rel="noopener noreferrer" className="flex flex-col lg:flex-row gap-4 w-full">
               <div className="w-1/2 lg:w-full lg:max-w-40">
-                <div className="overflow-hidden aspect-video rounded-md border-2 border-primary-200 bg-primary-0">
+                <div className="overflow-hidden aspect-video rounded-md border-1 border-primary-200 bg-primary-0">
                   <Image
                     alt="Project thumbnail"
                     loading="lazy"
@@ -68,7 +68,7 @@ const Projects = () => {
                 <h6 className={`font-semibold ${project.link && "h6-change"}`}>
                   {project.title}
                   {project.link && (
-                    <ArrowUpRightIcon className="arrow-icon" />
+                    <ArrowUpRightIcon className="icon external-arrow" />
                   )}
                 </h6>
                 <p className="mt-2 text-color-3">{project.description}</p>

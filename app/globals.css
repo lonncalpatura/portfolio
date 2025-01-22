@@ -2,6 +2,39 @@
 
 @layer base {
   :root {
+    --background-50: rgba(236, 240, 248, 1);
+    --background-100: rgba(218, 225, 241, 1);
+    --background-200: rgba(181, 195, 227, 1);
+    --background-300: rgba(143, 164, 214, 1);
+    --background-400: rgba(106, 134, 200, 1);
+    --background-500: rgba(69, 104, 186, 1);
+    --background-600: rgba(55, 83, 149, 1);
+    --background-700: rgba(41, 62, 112, 1);
+    --background-800: rgba(28, 42, 74, 1);
+    --background-900: rgba(14, 21, 37, 1);
+    --background-950: rgba(7, 10, 19, 1);
+    
+    --primary: rgba(15, 23, 42, 1);
+    --primary-0: rgba(18, 23, 38, 1);
+    --primary-100: rgba(38, 45, 64, 1);
+    --primary-200: rgba(63, 68, 85, 1);
+    --primary-300: rgba(87, 92, 107, 1);
+    --primary-400: rgba(111, 115, 128, 1);
+    --primary-500: rgba(139, 142, 152, 1);
+    
+    --accent: rgba(63, 252, 140, 1);
+    --accent-50: rgba(230, 255, 240, 1);
+    --accent-100: rgba(205, 254, 225, 1);
+    --accent-200: rgba(155, 253, 194, 1);
+    --accent-300: rgba(104, 253, 164, 1);
+    --accent-400: rgba(54, 252, 133, 1);
+    --accent-500: rgba(4, 251, 103, 1);
+    --accent-600: rgba(3, 201, 82, 1);
+    --accent-700: rgba(2, 151, 62, 1);
+    --accent-800: rgba(2, 100, 41, 1);
+    --accent-900: rgba(1, 50, 21, 1);
+    --accent-950: rgba(0, 25, 10, 1);
+
     --text: hsl(220, 45%, 95%);
     --text-2: hsl(222, 35%, 80%);
     --text-3: hsl(222, 30%, 70%);
@@ -10,73 +43,34 @@
     --text-6: hsl(222, 15%, 40%);
     --text-7: hsl(222, 10%, 30%);
     --text-8: hsl(222, 5%, 20%);
-
-    --background-50: #ecf0f8;
-    --background-100: #dae1f1;
-    --background-200: #b5c3e3;
-    --background-300: #8fa4d6;
-    --background-400: #6a86c8;
-    --background-500: #4568ba;
-    --background-600: #375395;
-    --background-700: #293e70;
-    --background-800: #1c2a4a;
-    --background-900: #0e1525;
-    --background-950: #070a13;
-    
-    --primary: #0f172a;
-    --primary-0: #121726;
-    --primary-100: #262d40;
-    --primary-200: #3f4455;
-    --primary-300: #575c6b;
-    --primary-400: #6f7380;
-    --primary-500: #8b8e98;
-    
-    --accent: #3ffc8c;
-    --accent-50: #e6fff0;
-    --accent-100: #cdfee1;
-    --accent-200: #9bfdc2;
-    --accent-300: #68fda4;
-    --accent-400: #36fc85;
-    --accent-500: #04fb67;
-    --accent-600: #03c952;
-    --accent-700: #02973e;
-    --accent-800: #026429;
-    --accent-900: #013215;
-    --accent-950: #00190a;
   }
 
   html {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 400;
     line-height: 1.25;
   }
   @media (min-width: 768px) {
     html {
-      font-size: 16px;
+      font-size: 17px;
     }
   }
   @media (min-width: 1280px) {
     html {
       font-size: 18px;
     }
+
     .card {
-      padding: 1rem;
-      border-radius: 0.5rem;
-      border-top: 1px solid transparent;
-      border-bottom: 1px solid transparent;
-      transition: all 0.1s ease-out;
+      @apply p-4 rounded-lg transition-all;
     }
     .card:hover {
-      background-color: color-mix(in srgb, var(--primary-100), transparent 50%);
-      border-top-color: var(--primary-200);
-      border-bottom-color: var(--primary-0);
+      @apply bg-primary-100 shadow-inner shadow-primary-200;
 
-      .arrow-icon {
-        transform: translate(2px, -2px);
-        stroke: var(--accent-200);
+      .external-arrow {
+        @apply translate-x-0.5 -translate-y-0.5 stroke-accent-300;
       }
       .h6-change {
-        color: var(--accent-200);
+        @apply text-accent-300;
       }
     }
   }
@@ -112,12 +106,12 @@
   .caption {
     font-size: 0.833rem;
   }
-  .button {
-    @apply px-6 py-3 rounded-full border-solid bg-accent-200 font-medium text-primary;
+
+  .icon {   
+    @apply size-4 inline-block stroke-2 stroke-text transition-all;
   }
-  .arrow-icon {
-    @apply size-4 inline-block ml-2 stroke-2 stroke-text;
-    transition: transform 0.1s ease-out;
+  .external-arrow {
+    @apply ml-2 transition-all;
   }
 
   .no-scrollbar::-webkit-scrollbar {
@@ -127,14 +121,35 @@
       -ms-overflow-style: none;
       scrollbar-width: none;
   }
-
-  .skill-tag {
-    @apply px-3 py-1 rounded-full border-solid bg-accent-200 font-medium text-primary;
+  .normal-cursor {
+    cursor: default;
   }
-  .about {
-    span {
-      @apply text-color font-medium;
+  
+  /* HERO */
+  .resume {
+    @apply inline-block mt-10 rounded-full transition-all;
+
+    &:hover {
+      @apply text-accent-300;
+
+      .external-arrow {
+        @apply stroke-accent-300 translate-x-0.5 -translate-y-0.5;
+      }
     }
+  }
+
+  .hero-icons {
+    @apply size-6 lg:size-6 fill-primary-300 transition-all hover:fill-accent-300;
+  }
+
+  /* ABOUT */
+  .about span {
+    @apply text-color font-medium;
+  }
+
+  /* OTHER */
+  .skill-tag {
+    @apply px-3 py-1 bg-gradient-to-br from-accent-300/15 to-accent-300/10 text-accent-200 rounded-full border-1 border-accent-300/5;
   }
 };
 

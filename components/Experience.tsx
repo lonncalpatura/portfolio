@@ -79,10 +79,10 @@ const Experience = () => {
             <a href={experience.link} target="_blank" rel="noopener noreferrer">
               <p className="caption mb-4 font-semibold text-color-4">{experience.date}</p>
 
-              <h6 className={`font-normal text-color ${experience.link && "h6-change"}`}>
+              <h6 className={`font-normal text-color-2 ${experience.link && "h6-change"}`}>
                 {experience.organisation}
                 {experience.link && (
-                    <ArrowUpRightIcon className="arrow-icon" />
+                    <ArrowUpRightIcon className="icon external-arrow" />
                   )}  
               </h6>
 
