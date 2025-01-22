@@ -24,11 +24,12 @@
     --background-950: #070a13;
     
     --primary: #0f172a;
-    --primary-100: #262c3e;
-    --primary-200: #3e4354;
-    --primary-300: #565b6a;
-    --primary-400: #707481;
-    --primary-500: #8b8e99;
+    --primary-0: #121726;
+    --primary-100: #262d40;
+    --primary-200: #3f4455;
+    --primary-300: #575c6b;
+    --primary-400: #6f7380;
+    --primary-500: #8b8e98;
     
     --accent: #3ffc8c;
     --accent-50: #e6fff0;
@@ -63,12 +64,21 @@
       border-radius: 0.5rem;
       border-top: 1px solid transparent;
       border-bottom: 1px solid transparent;
-    
-      &:hover {
-        border-top-color: white;
-        border-bottom-color: black;
+      transition: all 0.1s ease-out;
+    }
+    .card:hover {
+      background-color: color-mix(in srgb, var(--primary-100), transparent 50%);
+      border-top-color: var(--primary-200);
+      border-bottom-color: var(--primary-0);
+
+      .arrow-icon {
+        transform: translate(2px, -2px);
+        stroke: var(--accent-200);
       }
-    }    
+      .h6-change {
+        color: var(--accent-200);
+      }
+    }
   }
 
   h1 {
@@ -96,6 +106,7 @@
   }
   p {
     max-width: 60ch;
+    line-height: 1.5;
   }
 
   .caption {
@@ -104,15 +115,26 @@
   .button {
     @apply px-6 py-3 rounded-full border-solid bg-accent-200 font-medium text-primary;
   }
-  .skill-tag {
-    @apply px-3 py-1 rounded-full border-solid bg-accent-200 font-medium text-primary;
+  .arrow-icon {
+    @apply size-4 inline-block ml-2 stroke-2 stroke-text;
+    transition: transform 0.1s ease-out;
   }
+
   .no-scrollbar::-webkit-scrollbar {
     display: none;
   }
   .no-scrollbar {
       -ms-overflow-style: none;
       scrollbar-width: none;
+  }
+
+  .skill-tag {
+    @apply px-3 py-1 rounded-full border-solid bg-accent-200 font-medium text-primary;
+  }
+  .about {
+    span {
+      @apply text-color font-medium;
+    }
   }
 };
 

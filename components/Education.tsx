@@ -30,7 +30,7 @@ const Education = () => {
     <div>
       <h5>EDUCATION</h5>
 
-      <div className="flex flex-col gap-16 mt-10">
+      <div className="flex flex-col gap-10 mt-10">
         {educationData.map((education, index) => (
           <div key={index} className="">
             <p className="caption mb-4 font-semibold text-color-4">{education.year}</p>

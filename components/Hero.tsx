@@ -6,7 +6,7 @@ const Hero = () => {
       <div>
         <h5 className="font-medium">Hi, my name is</h5>
         <h1>Lonn Calpatura</h1>
-        <p className="mt-4 text-color-3">An aspiring front-end web developer with experience in AV and an interest in IT.</p>
+        <p className="mt-4 text-color-3">An aspiring front-end web developer with experience in AV and an interest in all things tech.</p>
         <a href="" className="inline-block mt-8 button">View Resume</a>
       </div>
 

@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import ficsdaImage from "../images/ficsda.png"
 import lunarImage from "../images/lunar.png";
+import { ArrowUpRightIcon } from "@heroicons/react/24/outline";
 
 const Projects = () => {
   const portfolioData = [
@@ -23,10 +24,10 @@ const Projects = () => {
       ]
     },
     {
-      title: "FICSDA App",
+      title: "FICSDA Mobile Web App",
       description: "A mobile app developed as a university project for a church, offering features such as a prayer request feed.",
       link: "",
-      image: lunarImage,
+      image: "",
       skills: [
         "React Native",
         "JavaScript",
@@ -48,29 +49,36 @@ const Projects = () => {
 
   return (
     <div>
-      <h5>PORTFOLIO</h5>
+      <h5>PROJECTS</h5>
       
-      <div className="flex flex-col gap-16 mt-10">
+      <div className="flex flex-col gap-10 mt-10">
         {portfolioData.map((project, index) => (
-          <div key={index} className="flex flex-col lg:flex-row-reverse gap-4 w-full card">
-            <div>
-              <h6 className="font-semibold"><a href={project.link} target="_blank" rel="noopener noreferrer">{project.title}</a></h6>
-              <p className="mt-2 text-color-3">{project.description}</p>
-              <ul className="flex flex-wrap gap-2 mt-4">
-                {project.skills.map((skill, index) => (
-                  <li key={index} className="caption skill-tag">{skill}</li>
-                ))}
-              </ul>
-            </div>
-            <div className="w-1/2 lg:w-full lg:max-w-40">
-              <div className="overflow-hidden rounded-md border-2 border-border">
-                <Image
-                  alt="Project thumbnail"
-                  loading="lazy"
-                  src={project.image}
-                />
+          <div key={index} className="card">
+            <a href={project.link} target="_blank" rel="noopener noreferrer" className="flex flex-col lg:flex-row gap-4 w-full">
+              <div className="w-1/2 lg:w-full lg:max-w-40">
+                <div className="overflow-hidden aspect-video rounded-md border-2 border-primary-200 bg-primary-0">
+                  <Image
+                    alt="Project thumbnail"
+                    loading="lazy"
+                    src={project.image}
+                  />
+                </div>
               </div>
-            </div>
+              <div>
+                <h6 className={`font-semibold ${project.link && "h6-change"}`}>
+                  {project.title}
+                  {project.link && (
+                    <ArrowUpRightIcon className="arrow-icon" />
+                  )}
+                </h6>
+                <p className="mt-2 text-color-3">{project.description}</p>
+                <ul className="flex flex-wrap gap-2 mt-4">
+                  {project.skills.map((skill, index) => (
+                    <li key={index} className="caption skill-tag">{skill}</li>
+                  ))}
+                </ul>
+              </div>
+            </a>
           </div>
         ))}
       </div>
