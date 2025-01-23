@@ -71,7 +71,7 @@ const Experience = () => {
 
   return (
     <div>
-      <h5>EXPERIENCE</h5>
+      <h6>EXPERIENCE</h6>
 
       <div className="flex flex-col gap-10 mt-10">
         {experienceData.map ((experience, index) => (

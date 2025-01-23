@@ -9,9 +9,10 @@ export default {
   theme: {
     colors: {
       white: "white",
+      black: "black",
       transparent: "transparent",
 
-      background: {
+      secondary: {
         50: "rgba(236, 240, 248, 1)",
         100: "rgba(218, 225, 241, 1)",
         200: "rgba(181, 195, 227, 1)",

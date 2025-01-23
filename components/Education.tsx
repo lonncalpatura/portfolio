@@ -28,7 +28,7 @@ const Education = () => {
 
   return (
     <div>
-      <h5>EDUCATION</h5>
+      <h6>EDUCATION</h6>
 
       <div className="flex flex-col gap-10 mt-10">
         {educationData.map((education, index) => (

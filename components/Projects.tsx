@@ -26,8 +26,8 @@ const Projects = () => {
     {
       title: "FICSDA Mobile Web App",
       description: "A mobile app developed as a university project for a church, offering features such as a prayer request feed.",
-      link: "",
-      image: "",
+      link: "https://lonncalpatura.github.io/lunar/",
+      image: lunarImage,
       skills: [
         "React Native",
         "JavaScript",
@@ -49,7 +49,7 @@ const Projects = () => {
 
   return (
     <div>
-      <h5>PROJECTS</h5>
+      <h6>PROJECTS</h6>
       
       <div className="flex flex-col gap-10 mt-10">
         {portfolioData.map((project, index) => (

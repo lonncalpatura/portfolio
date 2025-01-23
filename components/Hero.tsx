@@ -6,7 +6,10 @@ const Hero = () => {
     <div className="lg:flex lg:flex-col lg:justify-between lg:h-full">
       <div>
         <h5 className="font-medium">Hi, my name is</h5>
-        <h1 className="inline-block bg-gradient-to-r from-accent-100 via-accent-300 to-accent-500 text-transparent bg-clip-text">Lonn Calpatura</h1>
+        <h1 className="inline-block bg-gradient-to-r from-accent-100 via-accent-300 to-accent-500 text-transparent bg-clip-text">
+          <a href="">Lonn Calpatura</a>
+        </h1>
+        
         <p className="mt-4 text-color-3">An aspiring front-end web developer with experience in AV and an interest in all things tech.</p>
         <a href="" className="resume">
           <h6 className="font-medium">
