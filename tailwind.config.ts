@@ -80,7 +80,15 @@ export default {
       },
       borderWidth: {
         "1": "1px",
-      }
+      },
+      margin: {
+        "max-x-space": "var(--max-x-space)",
+        "hero-space": "var(--hero-space)",
+      },
+      padding: {
+        "max-x-space": "var(--max-x-space)",
+        "hero-space": "var(--hero-space)",
+      },
     },
   },
   plugins: [],

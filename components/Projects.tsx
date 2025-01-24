@@ -48,40 +48,36 @@ const Projects = () => {
   ]
 
   return (
-    <div>
-      <h6>PROJECTS</h6>
-      
-      <div className="flex flex-col gap-10 mt-10">
-        {portfolioData.map((project, index) => (
-          <div key={index} className="card">
-            <a href={project.link} target="_blank" rel="noopener noreferrer" className="flex flex-col lg:flex-row gap-4 w-full">
-              <div className="w-1/2 lg:w-full lg:max-w-40">
-                <div className="overflow-hidden aspect-video rounded-md border-1 border-primary-200 bg-primary-0">
-                  <Image
-                    alt="Project thumbnail"
-                    loading="lazy"
-                    src={project.image}
-                  />
-                </div>
+    <div className="flex flex-col gap-10">
+      {portfolioData.map((project, index) => (
+        <div key={index} className="card">
+          <a href={project.link} target="_blank" rel="noopener noreferrer" className="flex flex-col lg:flex-row gap-4 w-full">
+            <div className="w-1/2 lg:w-full lg:max-w-40">
+              <div className="overflow-hidden aspect-video rounded-md border-1 border-primary-200 bg-primary-0">
+                <Image
+                  alt="Project thumbnail"
+                  loading="lazy"
+                  src={project.image}
+                />
               </div>
-              <div>
-                <h6 className={`font-semibold ${project.link && "h6-change"}`}>
-                  {project.title}
-                  {project.link && (
-                    <ArrowUpRightIcon className="icon external-arrow" />
-                  )}
-                </h6>
-                <p className="mt-2 text-color-3">{project.description}</p>
-                <ul className="flex flex-wrap gap-2 mt-4">
-                  {project.skills.map((skill, index) => (
-                    <li key={index} className="caption skill-tag">{skill}</li>
-                  ))}
-                </ul>
-              </div>
-            </a>
-          </div>
-        ))}
-      </div>
+            </div>
+            <div>
+              <h6 className={`font-semibold ${project.link && "h6-change"}`}>
+                {project.title}
+                {project.link && (
+                  <ArrowUpRightIcon className="icon external-arrow" />
+                )}
+              </h6>
+              <p className="mt-2 text-color-3">{project.description}</p>
+              <ul className="flex flex-wrap gap-2 mt-4">
+                {project.skills.map((skill, index) => (
+                  <li key={index} className="caption skill-tag">{skill}</li>
+                ))}
+              </ul>
+            </div>
+          </a>
+        </div>
+      ))}
     </div>
   )
 }

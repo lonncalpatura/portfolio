@@ -70,37 +70,33 @@ const Experience = () => {
   ]
 
   return (
-    <div>
-      <h6>EXPERIENCE</h6>
+    <div className="flex flex-col gap-10">
+      {experienceData.map ((experience, index) => (
+        <div key={index} className="card">
+          <a href={experience.link} target="_blank" rel="noopener noreferrer">
+            <p className="caption mb-4 font-semibold text-color-4">{experience.date}</p>
 
-      <div className="flex flex-col gap-10 mt-10">
-        {experienceData.map ((experience, index) => (
-          <div key={index} className="card">
-            <a href={experience.link} target="_blank" rel="noopener noreferrer">
-              <p className="caption mb-4 font-semibold text-color-4">{experience.date}</p>
+            <h6 className={`font-normal text-color-2 ${experience.link && "h6-change"}`}>
+              {experience.organisation}
+              {experience.link && (
+                  <ArrowUpRightIcon className="icon external-arrow" />
+                )}  
+            </h6>
 
-              <h6 className={`font-normal text-color-2 ${experience.link && "h6-change"}`}>
-                {experience.organisation}
-                {experience.link && (
-                    <ArrowUpRightIcon className="icon external-arrow" />
-                  )}  
-              </h6>
+            <h6 className={`flex flex-col mb-4 ${experience.link && "h6-change"}`}>{experience.job}</h6>
 
-              <h6 className={`flex flex-col mb-4 ${experience.link && "h6-change"}`}>{experience.job}</h6>
+            <p className="flex flex-col gap-1 list-disc text-color-3">
+              {experience.responsibilities}
+            </p>
 
-              <p className="flex flex-col gap-1 list-disc text-color-3">
-                {experience.responsibilities}
-              </p>
-
-              <ul className="flex flex-wrap gap-2 mt-5">
-                {experience.skills.map((skill, index) => (
-                  <li key={index} className="caption skill-tag">{skill}</li>
-                ))}
-              </ul>
-            </a>
-          </div>
-        ))}
-      </div>
+            <ul className="flex flex-wrap gap-2 mt-5">
+              {experience.skills.map((skill, index) => (
+                <li key={index} className="caption skill-tag">{skill}</li>
+              ))}
+            </ul>
+          </a>
+        </div>
+      ))}
     </div>
   )
 }

@@ -18,10 +18,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className= "bg-primary bg-gradient-to-tl from-primary to-secondary-700/30 lg:to-secondary-700/50 text-color">
-      <body className={inter.className}>
-        {children}
-      </body>
+    <html
+      lang="en"
+      className="bg-primary lg:bg-primary text-color font-normal leading-tight scroll-smooth"
+    >
+      <body className={inter.className}>{children}</body>
     </html>
   );
 }

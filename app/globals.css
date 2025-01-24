@@ -1,8 +1,10 @@
 @tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 @layer base {
   :root {
-    --primary: rgba(15, 23, 42, 1);
+    --primary: rgba(15, 23, 42, 1); 
     --primary-0: rgba(18, 23, 38, 1);
     --primary-100: rgba(38, 45, 64, 1);
     --primary-200: rgba(63, 68, 85, 1);
@@ -43,15 +45,17 @@
     --text-6: hsl(222, 15%, 40%);
     --text-7: hsl(222, 10%, 30%);
     --text-8: hsl(222, 5%, 20%);
+
+    --max-x-space: calc((100vw - 1280px) / 2);
+    --max-x-space-hero: calc(var(--max-x-space) + 2.5rem);
+    --hero-space: calc(50vw + 5rem);
   }
 
 
   html {
-    scroll-behavior: smooth;
     font-size: 15px;
-    font-weight: 400;
-    line-height: 1.25;
   }
+
   @media (min-width: 768px) {
     html {
       font-size: 16px;
@@ -71,7 +75,7 @@
       @apply p-4 rounded-lg transition-all;
     }
     .card:hover {
-      @apply bg-primary-100/75 shadow-inner shadow-primary-200/75;
+      @apply bg-primary-300/25 shadow-inner shadow-primary-300/75;
 
       .external-arrow {
         @apply translate-x-0.5 -translate-y-0.5 stroke-accent-300;
@@ -83,12 +87,6 @@
         @apply  from-accent-300/10 to-accent-300/5 text-accent-200;
       }
     }
-
-    .content::before {
-      content: "";
-      
-      @apply absolute top-0 left-0 w-full h-40 backdrop-blur-lg pointer-events-none z-10;
-    }    
   }
 
   h1 {
@@ -118,18 +116,24 @@
     max-width: 60ch;
     line-height: 1.5;
   }
-
   .caption {
     font-size: 0.833rem;
   }
 
+  /* Icons */
   .icon {   
     @apply size-4 inline-block stroke-2 stroke-text transition-all;
   }
   .external-arrow {
     @apply ml-2 transition-all;
   }
+  .external-link:hover {
+    .external-arrow {
+      @apply translate-x-0.5 -translate-y-0.5 stroke-accent-300;
+    }
+  }
 
+  /* Browser elements */
   .no-scrollbar::-webkit-scrollbar {
     display: none;
   }
@@ -137,20 +141,11 @@
       -ms-overflow-style: none;
       scrollbar-width: none;
   }
-  .normal-cursor {
-    cursor: default;
-  }
   
   /* HERO */
-  .resume {
-    @apply inline-block mt-10 transition-all;
-
-    &:hover {
-      @apply text-accent-300;
-
-      .external-arrow {
-        @apply stroke-accent-300 translate-x-0.5 -translate-y-0.5;
-      }
+  .resume:hover {
+    .external-arrow {
+      @apply stroke-accent-300 translate-x-0.5 -translate-y-0.5;
     }
   }
   .hero-icons {
@@ -167,6 +162,3 @@
     @apply px-2 py-1 bg-gradient-to-br from-accent-200/10 to-accent-200/5 text-accent-100 rounded-full;
   }
 };
-
-@tailwind components;
-@tailwind utilities;
