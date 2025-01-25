@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "motion/react";
 import Hi from "./Hi";
 import Nav from "./Nav";
 import SocialMedia from "./SocialMedia";
@@ -11,7 +12,12 @@ const Heading = () => {
           <Hi />
           <Nav />
         </div>
-        <SocialMedia />
+        <motion.div
+          initial={{ x: -8, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+        >
+          <SocialMedia />
+        </motion.div>
       </header>
     </div>
   );

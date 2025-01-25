@@ -1,6 +1,7 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import { Tab, TabGroup, TabList } from "@headlessui/react";
+/* import { motion } from "motion/react"; */
 
 const Nav = () => {
   const [activeSection, setActiveSection] = useState("");
