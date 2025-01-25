@@ -54,7 +54,7 @@ const Projects = () => {
             className="flex flex-col lg:flex-row gap-4 w-full"
           >
             <div className="w-1/2 lg:w-full lg:max-w-40">
-              <div className="overflow-hidden aspect-video rounded-md border-1 border-primary-200 bg-primary-0">
+              <div className="overflow-hidden aspect-video rounded-md border-2 border-primary-300 bg-primary-0">
                 <Image
                   alt="Project thumbnail"
                   loading="lazy"

@@ -47,31 +47,13 @@
     --text-8: hsl(222, 5%, 20%);
 
     --max-x-space: calc((100vw - 1280px) / 2);
-    --max-x-space-hero: calc(var(--max-x-space) + 2.5rem);
     --hero-space: calc(50vw + 5rem);
-    --all-pl: calc(50% - 1rem);
+    /* FIX THIS IN TAILWIND */
+    --all-pl: calc(50% - 1rem); 
   }
 
-
-  html {
-    font-size: 15px;
-  }
-
-  @media (min-width: 768px) {
-    html {
-      font-size: 16px;
-    }
-  }
-  @media (min-width: 1024px) {
-    html {
-      font-size: 17px;
-    }
-  }
   @media (min-width: 1280px) {
-    html {
-      font-size: 18px;
-    }
-
+    /* FIX THIS (USE GROUP?/PEER) */
     .card {
       @apply p-4 rounded-lg transition-all;
     }
@@ -85,7 +67,7 @@
         @apply text-accent-300;
       }
       .skill-tag {
-        @apply  from-accent-300/10 to-accent-300/5 text-accent-200;
+        @apply from-accent-300/10 to-accent-300/5 text-accent-200;
       }
     }
   }
@@ -128,11 +110,6 @@
   .external-arrow {
     @apply ml-2 transition-all;
   }
-  .external-link:hover {
-    .external-arrow {
-      @apply translate-x-0.5 -translate-y-0.5 stroke-accent-300;
-    }
-  }
 
   /* Browser elements */
   .no-scrollbar::-webkit-scrollbar {
@@ -141,16 +118,6 @@
   .no-scrollbar {
       -ms-overflow-style: none;
       scrollbar-width: none;
-  }
-  
-  /* HERO */
-  .resume:hover {
-    .external-arrow {
-      @apply stroke-accent-300 translate-x-0.5 -translate-y-0.5;
-    }
-  }
-  .hero-icons {
-    @apply size-6 lg:size-6 fill-primary-300 transition-all hover:fill-accent-300;
   }
 
   /* ABOUT */
