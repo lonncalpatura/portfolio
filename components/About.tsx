@@ -1,9 +1,10 @@
 import React from "react";
+import Link from "next/link";
 import { ArrowUpRightIcon } from "@heroicons/react/24/outline";
 
 const About = () => {
   return (
-    <>
+    <div className="pl-4">
       <div className="space-y-4 text-color-3 about">
         <p>
           Hi! I&#39;m <span>Lonn Doneill Calpatura</span>, but you can call me{" "}
@@ -28,16 +29,18 @@ const About = () => {
           <span>all things tech</span> and <span>gaming</span>!
         </p>
       </div>
-      <a
-        href=""
+      <Link
+        href="/CV.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
         className="inline-block mt-10 transition-all text-color hover:text-accent-300 external-link"
       >
         <h6 className="font-medium">
           View Full CV
           <ArrowUpRightIcon className="icon external-arrow" />
         </h6>
-      </a>
-    </>
+      </Link>
+    </div>
   );
 };
 

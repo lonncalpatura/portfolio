@@ -49,6 +49,7 @@
     --max-x-space: calc((100vw - 1280px) / 2);
     --max-x-space-hero: calc(var(--max-x-space) + 2.5rem);
     --hero-space: calc(50vw + 5rem);
+    --all-pl: calc(50% - 1rem);
   }
 
 
