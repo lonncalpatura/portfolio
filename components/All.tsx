@@ -5,15 +5,15 @@ import Experience from "@/components/Experience";
 import Education from "@/components/Education";
 import Footer from "@/components/Footer";
 
-const All = () => {
-  const sections = [
-    { title: "ABOUT", id: "about", component: <About /> },
-    { title: "PROJECTS", id: "projects", component: <Projects /> },
-    { title: "EXPERIENCE", id: "experience", component: <Experience /> },
-    { title: "EDUCATION", id: "education", component: <Education /> },
-    { title: "", id: "footer", component: <Footer /> },
-  ];
+const sections = [
+  { title: "ABOUT", id: "about", component: <About /> },
+  { title: "PROJECTS", id: "projects", component: <Projects /> },
+  { title: "EXPERIENCE", id: "experience", component: <Experience /> },
+  { title: "EDUCATION", id: "education", component: <Education /> },
+  { title: "", id: "footer", component: <Footer /> },
+];
 
+const All = () => {
   return (
     <div className="lg:pl-[var(--all-pl)] lg:pr-max-x-space">
       <div className="lg:pr-10">

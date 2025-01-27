@@ -58,7 +58,7 @@
       @apply p-4 rounded-lg transition-all;
     }
     .card:hover {
-      @apply bg-primary-300/25 shadow-inner shadow-primary-300/75;
+      @apply bg-secondary-300/15 shadow-inner shadow-secondary-200/15;
 
       .external-arrow {
         @apply translate-x-0.5 -translate-y-0.5 stroke-accent-300;
@@ -67,7 +67,10 @@
         @apply text-accent-300;
       }
       .skill-tag {
-        @apply from-accent-300/10 to-accent-300/5 text-accent-200;
+        @apply from-accent-300/15 to-accent-300/10 text-accent-300;
+      }
+      .project-image {
+        @apply border-primary-400;
       }
     }
   }
@@ -127,6 +130,9 @@
 
   /* OTHER */
   .skill-tag {
-    @apply px-2 py-1 bg-gradient-to-br from-accent-200/10 to-accent-200/5 text-accent-100 rounded-full;
+    @apply px-2 py-1 bg-gradient-to-br from-accent-200/10 to-accent-200/5 text-accent-200/80 rounded-full;
+  }
+  .project-image {
+    @apply border-primary-300;
   }
 };

@@ -1,17 +1,16 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import { Tab, TabGroup, TabList } from "@headlessui/react";
-/* import { motion } from "motion/react"; */
+import { easeOut, motion } from "motion/react";
+
+const sections = [
+  { section: "About", id: "about" },
+  { section: "Projects", id: "projects" },
+  { section: "Experience", id: "experience" },
+  { section: "Education", id: "education" },
+];
 
 const Nav = () => {
   const [activeSection, setActiveSection] = useState("");
-
-  const sections = [
-    { section: "About", id: "about" },
-    { section: "Projects", id: "projects" },
-    { section: "Experience", id: "experience" },
-    { section: "Education", id: "education" },
-  ];
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -30,18 +29,33 @@ const Nav = () => {
     return () => observer.disconnect();
   }, []);
 
+  const listVariant = {
+    hidden: {},
+    visible: {
+      transition: { delayChildren: 0.2, staggerChildren: 0.15 },
+    },
+  };
+
+  const itemVariant = {
+    hidden: { opacity: 0, x: -8 },
+    visible: { opacity: 1, x: 0, transition: { duration: 0.3 }, easeOut },
+  };
+
   return (
-    <TabGroup>
-      <TabList className="hidden lg:block space-y-5 mt-16">
-        {sections.map(({ section, id }) => (
-          <Tab
-            key={id}
-            as="a"
+    <motion.ul
+      className="hidden lg:block space-y-5 mt-16"
+      variants={listVariant}
+      initial="hidden"
+      animate="visible"
+    >
+      {sections.map(({ section, id }) => (
+        <motion.li key={id} className="text-color-3" variants={itemVariant}>
+          <a
             href={`#${id}`}
             className={`block w-fit transition-all ${
               activeSection === id
                 ? "translate-x-2 text-accent-300 font-semibold"
-                : "hover:translate-x-1 hover:text-accent-200"
+                : "hover:translate-x-1 hover:text-color"
             }`}
           >
             <span
@@ -50,10 +64,10 @@ const Nav = () => {
               }`}
             ></span>
             {section}
-          </Tab>
-        ))}
-      </TabList>
-    </TabGroup>
+          </a>
+        </motion.li>
+      ))}
+    </motion.ul>
   );
 };
 

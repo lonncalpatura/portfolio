@@ -20,7 +20,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className="bg-primary lg:bg-primary text-[15px] md:text-[16px] lg:text-[17px] xl:text-[18px] text-color font-normal leading-tight scroll-smooth"
+      className="bg-primary text-[15px] md:text-[16px] lg:text-[17px] xl:text-[18px] text-color font-normal leading-tight scroll-smooth overflow-x-hidden"
     >
       <body className={inter.className}>{children}</body>
     </html>
