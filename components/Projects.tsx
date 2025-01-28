@@ -44,9 +44,12 @@ const Projects = () => {
   ];
 
   return (
-    <div className="flex flex-col gap-10">
+    <div className="flex flex-col gap-16 lg:gap-10">
       {portfolioData.map((project, index) => (
-        <div key={index} className="card">
+        <div
+          key={index}
+          className="lg:p-4 lg:hover:bg-secondary-300/15 lg:hover:shadow-inner lg:hover:shadow-secondary-200/15 lg:rounded-lg transition-all card group/card"
+        >
           <a
             href={project.link}
             target="_blank"
@@ -54,7 +57,7 @@ const Projects = () => {
             className="flex flex-col lg:flex-row gap-4 w-full"
           >
             <div className="w-1/2 lg:w-full lg:max-w-40">
-              <div className="overflow-hidden aspect-video rounded-md project-image border-2 bg-primary-0">
+              <div className="overflow-hidden aspect-video rounded-md border-2 border-primary-300 lg:group-hover/card:border-primary-400 bg-primary-0">
                 <Image
                   alt="Project thumbnail"
                   loading="lazy"
@@ -63,16 +66,19 @@ const Projects = () => {
               </div>
             </div>
             <div>
-              <h6 className={`font-semibold ${project.link && "h6-change"}`}>
+              <h6 className="font-semibold lg:group-hover/card:text-accent-300">
                 {project.title}
                 {project.link && (
-                  <ArrowUpRightIcon className="icon external-arrow" />
+                  <ArrowUpRightIcon className="ml-2 transition-all icon external-arrow" />
                 )}
               </h6>
               <p className="mt-2 text-color-3">{project.description}</p>
               <ul className="flex flex-wrap gap-2 mt-4">
                 {project.skills.map((skill, index) => (
-                  <li key={index} className="caption skill-tag">
+                  <li
+                    key={index}
+                    className="px-2 py-1 bg-gradient-to-br from-accent-300/15 lg:from-accent-200/10 to-accent-300/10 lg:to-accent-200/5 text-accent-300 lg:text-accent-200/80 text-caption rounded-full skill-tag"
+                  >
                     {skill}
                   </li>
                 ))}

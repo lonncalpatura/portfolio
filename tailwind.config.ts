@@ -62,17 +62,14 @@ export default {
     },
     
     extend: {
-      textColor: {
-        "color": {
-          DEFAULT: "var(--text)",
-          2: "var(--text-2)",
-          3: "var(--text-3)",
-          4: "var(--text-4)",
-          5: "var(--text-5)",
-          6: "var(--text-6)",
-          7: "var(--text-7)",
-          8: "var(--text-8)",
-        },
+      margin: {
+        "max-x-space": "calc((100vw - 1280px) / 2)",
+        "hero-space": "calc(50vw + 5rem)",
+      },
+      padding: {
+        "max-x-space": "calc((100vw - 1280px) / 2)",
+        "hero-space": "calc(50vw + 5rem)",
+        "all-pl": "calc(50% - 1rem)",
       },
       strokeWidth: {
         "3": "3px",
@@ -81,13 +78,20 @@ export default {
       borderWidth: {
         "1": "1px",
       },
-      margin: {
-        "max-x-space": "var(--max-x-space)",
-        "hero-space": "var(--hero-space)",
+      fontSize: {
+        "caption": "0.833rem",
       },
-      padding: {
-        "max-x-space": "var(--max-x-space)",
-        "hero-space": "var(--hero-space)",
+      textColor: {
+        "color": {
+          DEFAULT: "hsl(220, 45%, 95%)",
+          2: "hsl(222, 35%, 80%)",
+          3: "hsl(222, 30%, 70%)",
+          4: "hsl(222, 25%, 60%)",
+          5: "hsl(222, 20%, 50%)",
+          6: "hsl(222, 15%, 40%)",
+          7: "varhsl(222, 10%, 30%)",
+          8: "hsl(222, 5%, 20%)",
+        },
       },
     },
   },

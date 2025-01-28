@@ -34,7 +34,7 @@ const socialMediaData = [
       </svg>
     ),
   },
-  {
+  /*   {
     name: "Instagram",
     url: "https://www.instagram.com/onylfansonly/",
     icon: (
@@ -49,13 +49,13 @@ const socialMediaData = [
         />
       </svg>
     ),
-  },
+  }, */
 ];
 
 const listVariant = {
   hidden: {},
   visible: {
-    transition: { delayChildren: 0.2, staggerChildren: 0.15 },
+    transition: { delayChildren: 0.65, staggerChildren: 0.15 },
   },
 };
 

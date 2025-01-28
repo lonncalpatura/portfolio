@@ -71,26 +71,25 @@ const Experience = () => {
   ];
 
   return (
-    <div className="flex flex-col gap-10">
+    <div className="flex flex-col gap-16 lg:gap-10">
       {experienceData.map((experience, index) => (
-        <div key={index} className="card">
+        <div
+          key={index}
+          className="lg:p-4 lg:hover:bg-secondary-300/15 lg:hover:shadow-inner lg:hover:shadow-secondary-200/15 lg:rounded-lg transition-all card group/card"
+        >
           <a href={experience.link} target="_blank" rel="noopener noreferrer">
-            <p className="caption mb-4 font-semibold text-color-4">
+            <p className="mb-4 font-semibold text-caption text-color-4">
               {experience.date}
             </p>
 
-            <h6
-              className={`font-normal text-color-2 ${experience.link && "h6-change"}`}
-            >
+            <h6 className="font-normal text-color-2 lg:group-hover/card:text-accent-300">
               {experience.organisation}
               {experience.link && (
-                <ArrowUpRightIcon className="icon external-arrow" />
+                <ArrowUpRightIcon className="ml-2 transition-all icon external-arrow" />
               )}
             </h6>
 
-            <h6
-              className={`flex flex-col mb-4 ${experience.link && "h6-change"}`}
-            >
+            <h6 className="flex flex-col mb-4 lg:group-hover/card:text-accent-300">
               {experience.job}
             </h6>
 
@@ -100,7 +99,10 @@ const Experience = () => {
 
             <ul className="flex flex-wrap gap-2 mt-5">
               {experience.skills.map((skill, index) => (
-                <li key={index} className="caption skill-tag">
+                <li
+                  key={index}
+                  className="px-2 py-1 bg-gradient-to-br from-accent-300/15 lg:from-accent-200/10 to-accent-300/10 lg:to-accent-200/5 text-accent-300 lg:text-accent-200/80 text-caption rounded-full skill-tag"
+                >
                   {skill}
                 </li>
               ))}

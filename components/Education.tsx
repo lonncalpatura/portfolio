@@ -25,10 +25,10 @@ const Education = () => {
   ];
 
   return (
-    <div className="flex flex-col gap-10 pl-4">
+    <div className="flex flex-col gap-16 lg:gap-10 pl-4">
       {educationData.map((education, index) => (
         <div key={index} className="">
-          <p className="caption mb-4 font-semibold text-color-4">
+          <p className="mb-4 font-semibold text-caption text-color-4">
             {education.year}
           </p>
 

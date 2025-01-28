@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 @layer base {
-  :root {
+/*   :root {
     --primary: rgba(15, 23, 42, 1); 
     --primary-0: rgba(18, 23, 38, 1);
     --primary-100: rgba(38, 45, 64, 1);
@@ -45,36 +45,20 @@
     --text-6: hsl(222, 15%, 40%);
     --text-7: hsl(222, 10%, 30%);
     --text-8: hsl(222, 5%, 20%);
+  } */
 
-    --max-x-space: calc((100vw - 1280px) / 2);
-    --hero-space: calc(50vw + 5rem);
-    /* FIX THIS IN TAILWIND */
-    --all-pl: calc(50% - 1rem); 
-  }
-
-  @media (min-width: 1280px) {
-    /* FIX THIS (USE GROUP?/PEER) */
-    .card {
-      @apply p-4 rounded-lg transition-all;
-    }
+  @media (min-width: 1024px) {
     .card:hover {
-      @apply bg-secondary-300/15 shadow-inner shadow-secondary-200/15;
-
       .external-arrow {
         @apply translate-x-0.5 -translate-y-0.5 stroke-accent-300;
       }
-      .h6-change {
-        @apply text-accent-300;
-      }
+
       .skill-tag {
         @apply from-accent-300/15 to-accent-300/10 text-accent-300;
       }
-      .project-image {
-        @apply border-primary-400;
-      }
     }
   }
-
+  
   h1 {
     font-size: 2.986rem;
   }
@@ -102,37 +86,8 @@
     max-width: 60ch;
     line-height: 1.5;
   }
-  .caption {
-    font-size: 0.833rem;
-  }
-
-  /* Icons */
+  
   .icon {   
     @apply size-4 inline-block stroke-2 stroke-text transition-all;
-  }
-  .external-arrow {
-    @apply ml-2 transition-all;
-  }
-
-  /* Browser elements */
-  .no-scrollbar::-webkit-scrollbar {
-    display: none;
-  }
-  .no-scrollbar {
-      -ms-overflow-style: none;
-      scrollbar-width: none;
-  }
-
-  /* ABOUT */
-  .about span {
-    @apply text-color;
-  }
-
-  /* OTHER */
-  .skill-tag {
-    @apply px-2 py-1 bg-gradient-to-br from-accent-200/10 to-accent-200/5 text-accent-200/80 rounded-full;
-  }
-  .project-image {
-    @apply border-primary-300;
   }
 };
