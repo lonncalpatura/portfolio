@@ -11,7 +11,7 @@ const passion = Passion_One({
 
 const hiText = "Hi!";
 const mynameisText = "My name is";
-const nameText = "LONN CALPATURA";
+/* const nameText = "LONN CALPATURA"; */
 const descriptionText =
   "I'm an aspiring front-end web developer with experience in AV and an interest in all things tech.";
 
