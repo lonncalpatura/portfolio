@@ -55,7 +55,7 @@ const socialMediaData = [
 const listVariant = {
   hidden: {},
   visible: {
-    transition: { delayChildren: 0.65, staggerChildren: 0.15 },
+    transition: { delayChildren: 6.5 + 0.6, staggerChildren: 0.15 },
   },
 };
 

@@ -32,7 +32,7 @@ const Nav = () => {
   const listVariant = {
     hidden: {},
     visible: {
-      transition: { delayChildren: 0.2, staggerChildren: 0.15 },
+      transition: { delayChildren: 6.5, staggerChildren: 0.15 },
     },
   };
 
