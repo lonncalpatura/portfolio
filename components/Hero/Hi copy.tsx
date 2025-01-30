@@ -23,8 +23,6 @@ const Hi = () => {
 
   useEffect(() => {
     const handleAnimation = async () => {
-      await animate(scope.current, { scale: 2, x: "50%", y: "50%" }, {});
-
       // Stagger letters in "Hi!"
       await Promise.all(
         hiText.split("").map((_, index) =>
@@ -73,12 +71,6 @@ const Hi = () => {
             }
           )
         )
-      );
-
-      await animate(
-        scope.current,
-        { scale: 1, x: 0, y: 0 },
-        { duration: 0.6, ease: easeOut }
       );
     };
 

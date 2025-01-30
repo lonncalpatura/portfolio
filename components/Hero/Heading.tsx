@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "motion/react";
-import Hi from "./Hi";
+import Hi from "./Hi copy";
 import Nav from "./Nav";
 import SocialMedia from "./SocialMedia";
 
