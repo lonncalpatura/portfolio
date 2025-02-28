@@ -3,10 +3,18 @@ import Image from "next/image";
 import ficsdaWebsiteImage from "../assets/images/ficsda website.png";
 import ficsdaAppImage from "../assets/images/ficsda app.jpg";
 import lunarImage from "../assets/images/lunar.png";
+import stayImage from "../assets/images/stay.png";
 import { ArrowUpRightIcon } from "@heroicons/react/24/outline";
 
 const Projects = () => {
   const portfolioData = [
+    {
+      title: "Short film",
+      description: "A 5-minute short film for a university module.",
+      link: "https://www.youtube.com/watch?v=RqROk9Um53g",
+      image: stayImage,
+      skills: ["Adobe Premiere Pro", "Adobe Audition", "Videography"],
+    },
     {
       title: "FICSDA Website",
       description:
