@@ -4,6 +4,14 @@ import { ArrowUpRightIcon } from "@heroicons/react/24/outline";
 const Experience = () => {
   const experienceData = [
     {
+      date: "FEBRUARY 2025 - PRESENT",
+      job: "Delivery Driver",
+      organisation: "Evri",
+      responsibilities:
+        "Sort and manage hundreds of parcels a day Meet deadlines for each delivery, ensuring each parcel is on time and accounted for. Deal with any damaged and missing parcels.",
+      skills: ["Driving", "Punctuatuality", "Organisation"],
+    },
+    {
       date: "JANUARY 2012 - PRESENT",
       job: (
         <>

@@ -15,8 +15,8 @@ const mynameisText = "My name is";
 const descriptionText =
   "I'm an aspiring front-end web developer with experience in AV and an interest in all things tech.";
 
-const typeDelay = 0.05;
-const typeDuration = 0.075;
+const typeDelay = 0.025;
+const typeDuration = 0.025;
 
 const Hi = () => {
   const [scope, animate] = useAnimate();
@@ -57,7 +57,7 @@ const Hi = () => {
       await animate(
         "#name",
         { y: 0, opacity: 1 },
-        { delay: 0.3, duration: 0.5, ease: easeOut }
+        { delay: 0.1, duration: 0.5, ease: easeOut }
       );
 
       // Animate the description
