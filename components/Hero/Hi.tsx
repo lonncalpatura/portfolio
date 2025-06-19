@@ -13,9 +13,9 @@ const hiText = "Hi!";
 const mynameisText = "My name is";
 /* const nameText = "LONN CALPATURA"; */
 const descriptionText =
-  "I'm an aspiring front-end web developer with experience in AV and an interest in all things tech.";
+  "An aspiring front-end web developer, IT engineer, and AV technician with a passion for all things tech - known for being adept, adaptable, and eager to learn.";
 
-const typeDelay = 0.025;
+const typeDelay = 0.015;
 const typeDuration = 0.025;
 
 const Hi = () => {

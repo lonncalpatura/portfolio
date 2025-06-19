@@ -13,7 +13,7 @@ const hiText = "Hi!";
 const mynameisText = "My name is";
 /* const nameText = "LONN CALPATURA"; */
 const descriptionText =
-  "I'm an aspiring front-end web developer with experience in AV and an interest in all things tech.";
+  "I'm an aspiring front-end web developer, IT engineer, and AV technician with a passion for all things tech - known for being adept, adaptable, and eager to learn.";
 
 const typeDelay = 0.05;
 const typeDuration = 0.075;
@@ -44,7 +44,7 @@ const Hi = () => {
             `#mynameis-${index}`,
             { y: 0, opacity: 1 },
             {
-              delay: index * typeDelay + 0.7,
+              delay: index * typeDelay + 0.5,
               duration: typeDuration,
             }
           )
@@ -55,7 +55,7 @@ const Hi = () => {
       await animate(
         "#name",
         { y: 0, opacity: 1 },
-        { delay: 0.3, duration: 0.5, ease: easeOut }
+        { delay: 0.25, duration: 0.5, ease: easeOut }
       );
 
       // Animate the description
@@ -65,7 +65,7 @@ const Hi = () => {
             `#description-${index}`,
             { y: 0, opacity: 1 },
             {
-              delay: index * 0.03 + 0.5,
+              delay: index * 0.025 + 0.25,
               duration: typeDuration,
               ease: easeOut,
             }
