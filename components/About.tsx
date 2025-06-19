@@ -8,27 +8,34 @@ const About = () => {
       <div className="space-y-4 text-color-3 about">
         <p>
           Hi! I&#39;m <span className="text-color">Lonn Doneill Calpatura</span>
-          , but you can call me <span className="text-color">Onyl</span>.
-          I&#39;m an aspiring web developer with a passion for meticulously
-          crafting websites that help organisations grow. Though new to the
-          industry, I&#39;m confident in my skills and quick to adapt, always
-          eager to learn and improve. I enjoy finding the perfect balance
+          , but you can call me{" "}
+          <span className="relative inline-block text-color hover:text-accent-300 cursor-pointer group/onylipa">
+            <span className="block transition-opacity duration-200 group-hover/onylipa:opacity-0 ">
+              Onyl
+            </span>
+            <span className="absolute top-0 left-0 w-full opacity-0 transition-opacity duration-200 group-hover/onylipa:opacity-100">
+              ɒnˈɪl
+            </span>
+          </span>
+          . I&#39;m passionate about tech and love projects that make a
+          difference whether it&#39;s <span className="text-color">AV</span>,{" "}
+          <span className="text-color">websites</span>, or{" "}
+          <span className="text-color">IT systems</span>. I enjoy solving
+          problems, collaborating with others, and finding the perfect balance
           between structure and spontaneity—because, hey, life&#39;s more fun
           that way!
         </p>
         <p>
-          I also have experience in the{" "}
-          <span className="text-color">Audio & Visual (AV)</span> industry,
-          having volunteered at my church for 12 years. Moving from team member
-          to head of department, I&#39;ve gained valuable skills in{" "}
-          <span className="text-color">AV</span> and{" "}
-          <span className="text-color">workforce systems</span>,{" "}
-          <span className="text-color">teamwork</span>, and{" "}
-          <span className="text-color">leadership</span>.
+          Over the years, I&#39;ve gained hands-on experience through
+          volunteering and freelance work, growing from a team member into
+          leadership roles. These experiences have taught me the value of{" "}
+          <span className="text-color">adaptabiility</span>,{" "}
+          <span className="text-color">collaboration</span>, and{" "}
+          <span className="text-color">curiosity</span>.
         </p>
         <p>
-          Outisde of coding and AV projects, I love staying active by playing{" "}
-          <span className="text-color">volleyball</span> and{" "}
+          When I&#39;m not deep in a project, you&#39;ll find me staying active
+          by playing <span className="text-color">volleyball</span> and{" "}
           <span className="text-color">badminton</span>. And of course, being in
           the tech world, I have a big love for{" "}
           <span className="text-color">all things tech</span> and{" "}

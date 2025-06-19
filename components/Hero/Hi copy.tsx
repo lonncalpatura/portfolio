@@ -13,7 +13,7 @@ const hiText = "Hi!";
 const mynameisText = "My name is";
 /* const nameText = "LONN CALPATURA"; */
 const descriptionText =
-  "I'm an aspiring front-end web developer, IT engineer, and AV technician with a passion for all things tech - known for being adept, adaptable, and eager to learn.";
+  "I'm an aspiring AV technician, front-end web developer, and IT engineer with a passion for all things tech - known for being adept, adaptable, and eager to learn.";
 
 const typeDelay = 0.05;
 const typeDuration = 0.075;

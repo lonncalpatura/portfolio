@@ -8,7 +8,7 @@ const Experience = () => {
       job: "Delivery Driver",
       organisation: "Evri",
       responsibilities:
-        "Sort and manage hundreds of parcels a day Meet deadlines for each delivery, ensuring each parcel is on time and accounted for. Deal with any damaged and missing parcels.",
+        "Organise, Sort and manage 70-120 parcels a day, dealing with any damaged and missing parcels. Ensure each parcel for and delivered on time.",
       skills: ["Driving", "Punctuatuality", "Organisation"],
     },
     {
@@ -23,7 +23,7 @@ const Experience = () => {
       organisation: "FICSDA - Media and Communications",
       link: "https://ficsda.org",
       responsibilities:
-        "Led and managed a team of 4-15 volunteers, overseeing AV production and system renovations (£2000-£5000) while collaborating on media initiatives like livestreaming, photography, and videography. Efficiently addressed technical issues during live events, ensuring smooth operations and high-quality worship experiences.",
+        "Lead and managed a team of 4-15 volunteers, overseeing AV production and system renovations (£2000-£5000) while collaborating on media initiatives like livestreaming, photography, and videography. Efficiently solve technical issues during live events, ensuring smooth operations and high-quality worship experiences.",
       skills: [
         "Adobe CC",
         "Microsoft 365",
@@ -40,7 +40,7 @@ const Experience = () => {
       organisation: "Self-employed Freelance",
       organisationLink: "",
       responsibilities:
-        "Worked with clients to develop their websites, sticking to their requirements. Managed my own time to meet set deadlines.",
+        "Worked closely with clients to develop their websites, gathering requirements and propose tailored solutions. Managed my own time to meet set deadlines.",
       skills: [
         "HTML & CSS",
         "JavaScript",
@@ -58,7 +58,7 @@ const Experience = () => {
       organisation: "Deliveroo, Uber Eats, Just Eat",
       organisationLink: "",
       responsibilities:
-        "Delivered food orders promptly with excellent customer service, earning high customer ratings for reliability and quality. Managed multiple orders in a fast-paced environment, optimizing routes to meet delivery deadlines, Maintained food safety and security during transit, adhering to hygiene standards.",
+        "Delivered food orders promptly in a fast-paced environment with excellent customer service, earning high customer ratings for reliability and quality. Ensured food safety and hygiene throughout transit in compliance with delivery standards.",
       skills: [
         "Adaptability",
         "Customer Service",
