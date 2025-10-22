@@ -3,6 +3,15 @@ import React from "react";
 const Education = () => {
   const educationData = [
     {
+      year: "2025",
+      institution: "Academy of Live Technology",
+      certificate: ["Skills Bootcamp in Festival & Event Crewing "],
+      description: [
+        "Gained certificates in safety in the live events and crewing industry",
+        "Learned the basics of power, lighting, video, audio, stage and truss building ",
+      ],
+    },
+    {
       year: "2020 - 2023",
       institution: "University of Roehampton London",
       certificate: ["Bachelor of Arts in Digital Media (First Class Honours)"],
