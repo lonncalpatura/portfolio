@@ -23,7 +23,7 @@ const Experience = () => {
       organisation: "FICSDA - Media and Communications",
       link: "https://ficsda.org",
       responsibilities:
-        "Lead and managed a team of 4-15 volunteers, overseeing AV production and system renovations (£2000-£5000) while collaborating on media initiatives like livestreaming, photography, and videography. Efficiently solve technical issues during live events, ensuring smooth operations and high-quality worship experiences.",
+        "Lead and managed a team of 4-15 volunteers, overseeing AV production and system renovations (up to £8000) while collaborating on media initiatives like livestreaming, photography, and videography. Efficiently solve technical issues during live events, ensuring smooth operations and high-quality worship experiences.",
       skills: [
         "Adobe CC",
         "Microsoft 365",
