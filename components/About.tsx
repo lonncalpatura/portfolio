@@ -42,7 +42,7 @@ const About = () => {
           <span className="text-color">gaming</span>!
         </p>
       </div>
-      <Link
+      {/* <Link
         href="/CV.pdf"
         target="_blank"
         rel="noopener noreferrer"
@@ -52,7 +52,7 @@ const About = () => {
           View Full CV
           <ArrowUpRightIcon className="group-hover/cv:translate-x-0.5 group-hover/cv:-translate-y-0.5 ml-2 group-hover/cv:stroke-accent-300 transition-all icon external-arrow" />
         </h6>
-      </Link>
+      </Link> */}
     </div>
   );
 };
