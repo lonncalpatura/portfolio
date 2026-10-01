@@ -4,10 +4,19 @@ import ficsdaWebsiteImage from "../assets/images/ficsda website.png";
 import ficsdaAppImage from "../assets/images/ficsda app.jpg";
 import lunarImage from "../assets/images/lunar.png";
 import stayImage from "../assets/images/stay.png";
+import badmintonWeb from "../assets/images/badminton.png";
 import { ArrowUpRightIcon } from "@heroicons/react/24/outline";
 
 const Projects = () => {
   const portfolioData = [
+    {
+      title: "Badminton tournament website",
+      description:
+        "A website built using Framer, bringing live information about a badminton tournament, managed by Notion.",
+      link: "https://ficbadmintontournament.framer.website/",
+      image: badmintonWeb,
+      skills: ["Framer"],
+    },
     {
       title: "Short film",
       description: "A 5-minute short film for a university module.",
@@ -16,7 +25,7 @@ const Projects = () => {
       skills: ["Adobe Premiere Pro", "Adobe Audition", "Videography"],
     },
     {
-      title: "FICSDA Website",
+      title: "FICSDA website",
       description:
         "Website for the Filipino International Church of Seventh-day Adventists. Includes features such as Planning Center API and Contentful CDN.",
       link: "https://ficsda.org",
@@ -34,7 +43,7 @@ const Projects = () => {
       ],
     },
     {
-      title: "FICSDA Mobile Web App",
+      title: "FICSDA mobile web app",
       description:
         "A mobile web app developed as a university project for a church.",
       link: "https://github.com/lonncalpatura/ficsda-app",
@@ -42,7 +51,7 @@ const Projects = () => {
       skills: ["React Native", "JavaScript", "Expo"],
     },
     {
-      title: "Digital Agency Website",
+      title: "Digital agency website",
       description:
         "Non-functional portfolio website for an imaginary design agency called Lunar. This was a project for an advanced website design module in university.",
       link: "https://lonncalpatura.github.io/lunar/",

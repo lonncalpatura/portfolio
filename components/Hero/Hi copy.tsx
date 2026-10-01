@@ -10,7 +10,7 @@ const passion = Passion_One({
 });
 
 const hiText = "Hi!";
-const mynameisText = "My name is";
+const mynameisText = "I'm";
 /* const nameText = "LONN CALPATURA"; */
 const descriptionText =
   "I'm an aspiring AV technician, front-end web developer, and IT engineer with a passion for all things tech - known for being adept, adaptable, and eager to learn.";
@@ -32,9 +32,9 @@ const Hi = () => {
             {
               delay: index * typeDelay + 0.5,
               duration: typeDuration,
-            }
-          )
-        )
+            },
+          ),
+        ),
       );
 
       // Animate the "my name is" text
@@ -46,16 +46,16 @@ const Hi = () => {
             {
               delay: index * typeDelay + 0.5,
               duration: typeDuration,
-            }
-          )
-        )
+            },
+          ),
+        ),
       );
 
       // Animate the name
       await animate(
         "#name",
         { y: 0, opacity: 1 },
-        { delay: 0.25, duration: 0.5, ease: easeOut }
+        { delay: 0.25, duration: 0.5, ease: easeOut },
       );
 
       // Animate the description
@@ -68,9 +68,9 @@ const Hi = () => {
               delay: index * 0.025 + 0.25,
               duration: typeDuration,
               ease: easeOut,
-            }
-          )
-        )
+            },
+          ),
+        ),
       );
     };
 
@@ -104,7 +104,7 @@ const Hi = () => {
           id="name"
           className={`inline-block bg-gradient-to-r from-accent-500 to-accent-200 bg-clip-text text-transparent text-[3.58rem] lg:text-[4.296rem] leading-none ${passion.className} opacity-0 transition-all`}
         >
-          LONN CALPATURA
+          ONYL CALPATURA
         </h1>
       </a>
 
