@@ -5,8 +5,8 @@ import { easeOut, motion } from "motion/react";
 const sections = [
   { section: "About", id: "about" },
   { section: "Projects", id: "projects" },
-  { section: "Experience", id: "experience" },
-  { section: "Education", id: "education" },
+  // { section: "Experience", id: "experience" },
+  // { section: "Education", id: "education" },
 ];
 
 const Nav = () => {
@@ -18,7 +18,7 @@ const Nav = () => {
         const visibleSection = entries.find((entry) => entry.isIntersecting);
         if (visibleSection) setActiveSection(visibleSection.target.id);
       },
-      { threshold: 0.5 }
+      { threshold: 0.5 },
     );
 
     sections.forEach(({ id }) => {

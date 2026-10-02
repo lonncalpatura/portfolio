@@ -5,8 +5,7 @@ const About = () => {
     <div className="lg:pl-4">
       <div className="space-y-4 text-color-3 about">
         <p>
-          Hi! I&#39;m <span className="text-color">Lonn Doneill Calpatura</span>
-          , but you can call me{" "}
+          Hi! I&#39;m{" "}
           <span className="relative inline-block text-color hover:text-accent-300 cursor-pointer group/onylipa">
             <span className="block transition-opacity duration-200 group-hover/onylipa:opacity-0 ">
               Onyl
@@ -15,8 +14,10 @@ const About = () => {
               ɒnˈɪl
             </span>
           </span>
-          . I&#39;m passionate about tech and love projects that make a
-          difference whether it&#39;s <span className="text-color">AV</span>,{" "}
+          , but my real name is{" "}
+          <span className="text-color">Lonn Doneill Calpatura</span>. I&#39;m
+          passionate about tech and love projects that make a difference whether
+          it&#39;s <span className="text-color">AV</span>,{" "}
           <span className="text-color">websites</span>, or{" "}
           <span className="text-color">IT systems</span>. I enjoy solving
           problems, collaborating with others, and finding the perfect balance
