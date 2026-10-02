@@ -8,8 +8,8 @@ import Footer from "@/components/Footer";
 const sections = [
   { title: "ABOUT", id: "about", component: <About /> },
   { title: "PROJECTS", id: "projects", component: <Projects /> },
-  { title: "EXPERIENCE", id: "experience", component: <Experience /> },
-  { title: "EDUCATION", id: "education", component: <Education /> },
+  // { title: "EXPERIENCE", id: "experience", component: <Experience /> },
+  // { title: "EDUCATION", id: "education", component: <Education /> },
   { title: "", id: "footer", component: <Footer /> },
 ];
 
